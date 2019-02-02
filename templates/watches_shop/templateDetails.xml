@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.6.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>watches_shop</name>
+	<creationDate>Creation Date</creationDate>
+	<author>Your name</author>
+	<authorEmail>Your email</authorEmail>
+	<authorUrl>http://ordasoft.com/Forum/</authorUrl>
+	<copyright>Your copyrights</copyright>
+	<license> </license>
+	<version>4.0</version>
+	<description> 
+	<![CDATA[
+	      <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	      <br>
+	      <h1 class="temph1">The OS Framework</h1>
+	      <h4 class="temph4">Fast & Light Joomla Framework</h4>
+	      <p class="text_propery">Joomla Blank Template includes amazing interface and powerful admin area. OS Joomla Framework has HTML5, Bootstrap and LESS at core. Joomla Blank Template supports Font Awesome. The new version of  OS Joomla Framework includes last version VirtueMart, K2 blog, OS Simple Membership, OS Touch Slider, OS Responsive Image Gallery, Forms from Balbooa team, awesome custom pages and nice Joomla content.</p>
+	      <br>
+	      <div id="down_pictures"> 
+		    <a href="http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be" onclick="window.open('http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be','OrdaSoft Joomla Template Features','width=635,height=610,left='+(screen.availWidth/2-317.5)+',top='+(screen.availHeight/2-305)+'');return false;" target="_blank"><img style="width:400px; height:306px;" src="../templates/watches_shop/joomla_template_features_video.jpg"/></a>
+		    <div style="clear:both;"></div>
+		    <div class="sepp_div"></div>
+		    <a href="http://ordasoft.com/membership-page.html" target="_blank"><img src="../templates/watches_shop/button_become_member.jpg"/></a> 
+	      </div>
+	]]>
+	</description>
+
+	<files>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<folder>bootstrap</folder>
+		<folder>development_style</folder>
+		<folder>prelouder</folder>
+		<folder>template_details_style</folder>
+
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>button_become_member.jpg</filename>
+		<filename>joomla_template_features_video.jpg</filename>
+		<filename>ordasoft_template_logo.png</filename>
+	</files>
+
+	<positions>
+		<position>full_width_top</position>
+	  	<position>Search</position>
+		<position>topMenu</position>
+		<position>Top1</position>
+		<position>Top2</position>
+		<position>Top3</position>
+		<position>Top4</position>
+		<position>Mainmenu</position>
+		<position>VmCart</position>
+		<position>Breadcrumbs</position>
+		<position>Slideshow</position>
+		<position>Feature1</position>
+		<position>Feature2</position>
+		<position>Feature3</position>
+		<position>SidebarLeft</position>
+		<position>ContentTop1</position>
+		<position>ContentTop2</position>
+		<position>ContentBottom1</position>
+		<position>ContentBottom2</position>
+		<position>SidebarRight</position>
+		<position>location_map</position>
+		<position>Bottom1</position>
+		<position>Bottom2</position>
+		<position>Bottom3</position>
+		<position>Bottom4</position>
+		<position>full_width_middle</position>
+		<position>footerMenu</position>
+		<position>Footer1</position>
+		<position>Footer2</position>
+		<position>Footer3</position>
+		<position>Footer4</position>
+		<position>Debug</position>
+		<position>full_width_bottom</position>
+
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+	</positions>
+
+<config>
+
+	<fields name="params" addfieldpath="/templates/watches_shop/elements">
+ 
+		<fieldset  name="body" type="upload_func" label="Body">
+		  <field name="btlabout" type="btlabout" description="" label="" />
+
+
+			<field name="expand_body_bg" type="radio" class="btn-group" label="Background" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_color" type="color" label="Body Background Color:" description="Example: #000000" default="#ffffff" showon="expand_body_bg:1"></field>
+
+			<field name="body_background" type="list" label="Body pattern:" showon="expand_body_bg:1">
+				<option value="">None</option>
+				<option value="01.jpg">Stone</option>
+				<option value="02.png">Lines</option>
+				<option value="03.png">Rhombus</option>
+				<option value="04.png">Noise</option>
+				<option value="05.png">Сloth</option>
+			</field>
+
+			<field  name="body_custom_bg_file" type="media" label="Custom background image:" showon="expand_body_bg:1">
+			</field>
+
+			<field name="body_bg_size" type="radio" class="btn-group" label="Background-size:" default="auto" showon="expand_body_bg:1">
+			    <option value="auto">auto</option>
+			    <option value="cover">cover</option>
+			</field>
+
+			<field name="body_bg_repeat" type="list" label="Background-repeat:" default="repeat" showon="expand_body_bg:1">
+			    <option value="no-repeat">no-repeat</option>
+			    <option value="repeat">repeat</option>
+			    <option value="repeat-x">repeat-x</option>
+			    <option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="body_bg_attachment" type="radio" class="btn-group" label="Background-attachment:" default="scroll" showon="expand_body_bg:1">
+				<option value="scroll">scroll</option>
+				<option value="fixed">fixed</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_bg:1[OR]expand_body_links:1" ></field>
+
+			<field name="expand_body_links" type="radio" class="btn-group" label="Links" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_link_color" type="color" label="Body links color:" description="Example: #A8A7A8" default="#474747" showon="expand_body_links:1"></field>
+
+			<field name="body_link_hover_color" type="color" label="Body links hover color:" description="Example: #000000" default="#A8A7A8" showon="expand_body_links:1"></field>
+
+			<field name="body_underline" type="radio" class="btn-group" label="Body links underline:" default="none" showon="expand_body_links:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="body_hover_underline" type="radio" class="btn-group" label="Body links hover underline:" default="underline" showon="expand_body_links:0">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field type="spacer" showon="expand_body_links:1[OR]expand_body_font:1" ></field>
+
+			<field name="expand_body_font" type="radio" class="btn-group" label="Font" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_font" type="list" label="Body Font:" default="Poppins" showon="expand_body_font:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="links_font" type="list" label="Body Links Font:" default="Poppins" showon="expand_body_font:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_text_color" type="color" label="Body text color:" description="Example: #474747" default="#a8a7a8" showon="expand_body_font:1"></field>
+
+			<field type="spacer" showon="expand_body_font:1[OR]expand_body_h1:1" ></field>
+
+
+			<field name="expand_body_h1" type="radio" class="btn-group" label="H1" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h1_font" type="list" label="Font:" default="Poppins" showon="expand_body_h1:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h1_color" type="color" label="Color:" default="#474747" showon="expand_body_h1:1"></field>
+
+			<field name="body_h1_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h1:1"></field>
+
+			<field name="body_h1_font_weight" type="list" label="Font-weight:" default="500" showon="expand_body_h1:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h1_text_transform" type="radio" class="btn-group" label="Text-transform:" default="uppercase" showon="expand_body_h1:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_h1:1[OR]expand_body_h2:1" ></field>
+
+			<field name="expand_body_h2" type="radio" class="btn-group" label="H2" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h2_font" type="list" label="Font:" default="Poppins" showon="expand_body_h2:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h2_color" type="color" label="Color:" default="#474747" showon="expand_body_h2:1"></field>
+
+			<field name="body_h2_size" type="number" label="Font-size:" default="28" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h2:1"></field>
+
+			<field name="body_h2_font_weight" type="list" label="Font-weight:" default="500" showon="expand_body_h2:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h2_text_transform" type="radio" class="btn-group" label="Text-transform:" default="uppercase" showon="expand_body_h2:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_h2:1[OR]expand_body_h3:1" ></field>
+
+			<field name="expand_body_h3" type="radio" class="btn-group" label="H3" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h3_font" type="list" label="Font:" default="Poppins" showon="expand_body_h3:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h3_color" type="color" label="Color:" default="#474747" showon="expand_body_h3:1"></field>
+
+			<field name="body_h3_size" type="number" label="Font-size:" default="24" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h3:1"></field>
+
+			<field name="body_h3_font_weight" type="list" label="Font-weight:" default="500" showon="expand_body_h3:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h3_text_transform" type="radio" class="btn-group" label="Text-transform:" default="none" showon="expand_body_h3:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_h3:1[OR]expand_body_h4:1" ></field>
+
+			<field name="expand_body_h4" type="radio" class="btn-group" label="H4" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h4_font" type="list" label="Font:" default="Poppins" showon="expand_body_h4:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h4_color" type="color" label="Color:" default="#474747" showon="expand_body_h4:1"></field>
+
+			<field name="body_h4_size" type="number" label="Font-size:" default="20" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h4:1"></field>
+
+			<field name="body_h4_font_weight" type="list" label="Font-weight:" default="500" showon="expand_body_h4:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h4_text_transform" type="radio" class="btn-group" label="Text-transform:" default="none" showon="expand_body_h4:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_h4:1[OR]expand_body_h5:1" ></field>
+
+			<field name="expand_body_h5" type="radio" class="btn-group" label="H5" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h5_font" type="list" label="Font:" default="Poppins" showon="expand_body_h5:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h5_color" type="color" label="Color:" default="#474747" showon="expand_body_h5:1"></field>
+
+			<field name="body_h5_size" type="number" label="Font-size:" default="18" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h5:1"></field>
+
+			<field name="body_h5_font_weight" type="list" label="Font-weight:" default="600" showon="expand_body_h5:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h5_text_transform" type="radio" class="btn-group" label="Text-transform:" default="uppercase" showon="expand_body_h5:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+
+			<field type="spacer" showon="expand_body_h5:1[OR]expand_body_h6:1" ></field>
+
+			<field name="expand_body_h6" type="radio" class="btn-group" label="H6" default="0">
+			    <option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="body_h6_font" type="list" label="Font:" default="Poppins" showon="expand_body_h6:1">
+	 			<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="body_h6_color" type="color" label="Color:" default="#474747" showon="expand_body_h6:1"></field>
+
+			<field name="body_h6_size" type="number" label="Font-size:" default="16" min="1" max="100" step="1" description="Example: 36" showon="expand_body_h6:1"></field>
+
+			<field name="body_h6_font_weight" type="list" label="Font-weight:" default="500" showon="expand_body_h6:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="body_h6_text_transform" type="radio" class="btn-group" label="Text-transform:" default="none" showon="expand_body_h6:1">
+				<option value="none">none</option>
+				<option value="uppercase">uppercase</option>
+			</field>
+			
+
+		</fieldset>
+
+		<fieldset name="header" type="upload_func" label="header">
+
+			<field type="spacer"  />
+
+			<field name="expand_header_bg" type="radio" class="btn-group" label="Background" default="1">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_color" type="color" label="Header Background Color:" description="Example: #ffffff" default="#ffffff"  showon="expand_header_bg:1"
+			>
+			</field>
+
+			<field name="header_background" type="list" label="Header pattern:" showon="expand_header_bg:1">
+				<option value="">None</option>
+				<option value="01.png">Stone</option>
+				<option value="02.png">Lines</option>
+				<option value="03.png">Rhombus</option>
+				<option value="04.png">Noise</option>
+				<option value="05.png">Сloth</option>
+			</field>
+
+			<field  name="header_custom_bg_file" type="media" label="Custom background image:" showon="expand_header_bg:1">
+			</field>
+
+			<field name="header_bg_size" type="radio" class="btn-group" label="Background-size:" default="auto" showon="expand_header_bg:1">
+			    <option value="auto">auto</option>
+			    <option value="cover">cover</option>
+			</field>
+
+			<field name="header_bg_repeat" type="list" label="Background-repeat:" default="repeat" showon="expand_header_bg:1">
+			    <option value="no-repeat">no-repeat</option>
+			    <option value="repeat">repeat</option>
+			    <option value="repeat-x">repeat-x</option>
+			    <option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="header_bg_attachment" type="radio" class="btn-group" label="Background-attachment:" default="scroll" showon="expand_header_bg:1" >
+				<option value="scroll">scroll</option>
+				<option value="fixed">fixed</option>
+			</field>
+
+			<field type="spacer" showon="expand_header_bg:1[OR]expand_header_links:1" ></field>
+
+
+			<field name="expand_header_links" type="radio" class="btn-group" label="Links" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_link_color" type="color" label="Header links color:" description="Example: #ffffff" default="#92999E" showon="expand_header_links:1"
+			>
+			</field>
+
+			<field name="header_link_hover_color" type="color" label="Header links hover color:" description="Example: #ffffff" default="#12ABFF"
+			showon="expand_header_links:1">
+			</field>
+
+			<field name="header_underline" type="radio" class="btn-group" label="Header links underline:" default="none" showon="expand_header_links:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="header_hover_underline" type="radio" class="btn-group" label="Header links hover underline:" default="none" showon="expand_header_links:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field>
+
+			<field type="spacer" showon="expand_header_links:1[OR]expand_header_font:1" ></field>
+			
+			<field name="expand_header_font" type="radio" class="btn-group" label="Font" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_font" type="list" label="Header Font:" default="Poppins" showon="expand_header_font:1" >
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="header_links_font" type="list" label="Header Links Font:" default="Poppins" showon="expand_header_font:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field> 
+
+			<field name="header_text_color" type="color" label="Header text color:" description="Example: #666666" default="#666666" showon="expand_header_font:1"></field>
+
+			<field type="spacer" showon="expand_header_font:1[OR]expand_header_h1:1" ></field>
+			
+
+			<field name="expand_header_h1" type="radio" class="btn-group"  default="0" label="H1">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_h1_size" type="number" default="32" label="Font-size:" description="Example: 36" min="1" max="100" step="1" showon="expand_header_h1:1" />
+
+			<field name="header_h1_color" type="color" label="Color:" default="#666666" showon="expand_header_h1:1" ></field>
+
+			<field type="spacer" showon="expand_header_h1:1[OR]expand_header_h2:1" ></field>
+			
+
+			<field name="expand_header_h2" type="radio" class="btn-group"  default="0" label="H2">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_h2_size" type="number" label="Font-size:" description="Example: 30" default="28" min="1" max="100" step="1" showon="expand_header_h2:1" >
+			</field>
+
+			<field name="header_h2_color" type="color" label="Color:" default="#666666" showon="expand_header_h2:1" ></field>
+
+
+			<field type="spacer" showon="expand_header_h2:1[OR]expand_header_h3:1" ></field>
+			
+
+			<field name="expand_header_h3" type="radio" class="btn-group"  default="0" label="H3" >
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_h3_size" type="number" label="Font-size:" description="Example: 24" default="24" min="1" max="100" step="1" showon="expand_header_h3:1" >
+			</field>
+			<field name="header_h3_color" type="color" label="Color:" default="#666666" showon="expand_header_h3:1" ></field>
+
+			<field type="spacer" showon="expand_header_h3:1[OR]expand_header_h4:1" ></field>
+
+
+			<field name="expand_header_h4" type="radio" class="btn-group"  default="0" label="H4">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+
+			<field name="header_h4_size" type="number" label="Font-size:" description="Example: 18" default="20" min="1" max="100" step="1" showon="expand_header_h4:1" >
+			</field>
+			<field name="header_h4_color" type="color" label="Color:" default="#666666" showon="expand_header_h4:1" ></field>
+
+			<field type="spacer" showon="expand_header_h4:1[OR]expand_header_h5:1" ></field>
+			
+	
+			<field name="expand_header_h5" type="radio" class="btn-group" label="H5"  default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_h5_size" type="number" label="Font-size:" description="Example: 14" default="18" min="1" max="100" step="1" showon="expand_header_h5:1" >
+			</field>
+			<field name="header_h5_color" type="color" label="Color:" default="#666666" showon="expand_header_h5:1" ></field>
+
+			<field type="spacer" showon="expand_header_h5:1[OR]expand_header_h6:1" ></field>
+			
+
+			<field name="expand_header_h6" type="radio" class="btn-group" label="H6"  default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="header_h6_size" type="number" label="Font-size:" description="Example: 12" default="16" min="1" max="100" step="1" showon="expand_header_h6:1" >
+			</field>
+
+			<field name="header_h6_color" type="color" label="Color:" default="#666666" showon="expand_header_h6:1" > 
+			</field>
+
+		</fieldset>
+
+		<fieldset name="content" type="upload_func" label="Content">
+
+
+			<field type="spacer"  />
+
+			<field name="expand_central_content_bg" type="radio" class="btn-group" label="Background" default="0">
+				<option value="0">Inherit from body</option>
+				<option value="1">Edit</option>
+			</field>
+
+			<field name="central_content_color" type="color" label="Content Background Color:" description="Example: #F8F8F8" default="#F8F8F8" showon="expand_central_content_bg:1"
+			>
+			</field>
+
+			<field name="central_content_background" type="list" label="Content pattern:" showon="expand_central_content_bg:1">
+				<option value="">None</option>
+				<option value="01.png">Stone</option>
+				<option value="02.png">Lines</option>
+				<option value="03.png">Rhombus</option>
+				<option value="04.png">Noise</option>
+				<option value="05.png">Сloth</option>
+			</field>
+
+			<field  name="central_content_custom_bg_file" type="media" label="Custom background image:" showon="expand_central_content_bg:1">
+			</field>
+
+			<field name="central_content_bg_size" type="radio" class="btn-group" label="Background-size:" default="auto" showon="expand_central_content_bg:1">
+			    <option value="auto">auto</option>
+			    <option value="cover">cover</option>
+			</field>
+
+			<field name="central_content_bg_repeat" type="list" label="Background-repeat:" default="repeat" showon="expand_central_content_bg:1" >
+			    <option value="no-repeat">no-repeat</option>
+			    <option value="repeat">repeat</option>
+			    <option value="repeat-x">repeat-x</option>
+			    <option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="central_content_bg_attachment" type="radio" class="btn-group" label="Background-attachment:" default="scroll" showon="expand_central_content_bg:1" >
+				<option value="scroll">scroll</option>
+				<option value="fixed">fixed</option>
+			</field>
+
+			<field type="spacer" showon="expand_central_content_bg:1[OR]expand_central_content_links:1" ></field>
+			
+
+			<field name="expand_central_content_links" type="radio" class="btn-group" label="Links" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="central_content_link_color" type="color" label="Content links color:" description="Example: #000000" default="#92999E" showon="expand_central_content_links:1"
+			>
+			</field>
+
+			<field name="central_content_link_hover_color" type="color" label="Content links hover color:" description="Example: #ffffff" default="#12ABFF" showon="expand_central_content_links:1"
+			>
+			</field>
+
+			<field name="central_content_underline" type="radio" class="btn-group" label="Content links underline:" default="none" showon="expand_central_content_links:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field>
+
+			<field name="central_content_hover_underline" type="radio" class="btn-group" label="Content links hover underline:" default="none" showon="expand_central_content_links:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field>
+
+			<field type="spacer" showon="expand_central_content_links:1[OR]expand_central_content_font:1" ></field>
+			
+
+			<field name="expand_central_content_font" type="radio" class="btn-group" label="Font" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="central_content_font" type="list" label="Content Font:" default="Poppins" showon="expand_central_content_font:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="central_content_links_font" type="list" label="Content Links Font:" default="Poppins" showon="expand_central_content_font:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field> 
+
+			<field name="central_content_text_color" type="color" label="Content text color:" description="Example: #666666" default="#666666" showon="expand_central_content_font:1"></field>
+
+			<field type="spacer" showon="expand_central_content_font:1[OR]expand_central_content_h1:1" ></field>
+
+			<field type="radio" name="expand_central_content_h1" label="H1" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h1_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h1:1" description="Example: 36"></field>
+			<field name="central_content_h1_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h1:1"></field>
+
+
+			<field type="spacer" showon="expand_central_content_h1:1[OR]expand_central_content_h2:1" ></field>
+			
+			<field type="radio" name="expand_central_content_h2" label="H2" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h2_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h2:1" description="Example: 36"></field>
+			<field name="central_content_h2_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h2:1"></field>
+
+			<field type="spacer" showon="expand_central_content_h2:1[OR]expand_central_content_h3:1" ></field>
+
+			
+			<field type="radio" name="expand_central_content_h3" label="H3" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h3_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h3:1" description="Example: 36"></field>
+			<field name="central_content_h3_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h3:1"></field>
+
+			<field type="spacer" showon="expand_central_content_h3:1[OR]expand_central_content_h4:1" ></field>
+
+			
+			<field type="radio" name="expand_central_content_h4" label="H4" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h4_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h4:1" description="Example: 36"></field>
+			<field name="central_content_h4_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h4:1"></field>
+
+			<field type="spacer" showon="expand_central_content_h4:1[OR]expand_central_content_h5:1" ></field>
+		
+			<field type="radio" name="expand_central_content_h5" label="H5" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h5_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h5:1" description="Example: 36"></field>
+			<field name="central_content_h5_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h5:1"></field>
+
+			<field type="spacer" showon="expand_central_content_h5:1[OR]expand_central_content_h6:1" ></field>
+
+			
+			<field type="radio" name="expand_central_content_h6" label="H6" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="central_content_h6_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_central_content_h6:1" description="Example: 36"></field>
+			<field name="central_content_h6_color" type="color" label="Color:" default="#888888" showon="expand_central_content_h6:1"></field>
+
+
+		</fieldset>
+
+		<fieldset name="footer" type="upload_func" label="Footer">
+
+
+			<field type="spacer"  />
+
+			<field name="expand_footer_bg" type="radio" class="btn-group" label="Background" default="1">
+				<option value="0">Inherit from body</option>
+				<option value="1">Edit</option>
+			</field>
+
+			<field name="footer_color" type="color" label="Footer Background Color:" description="Example: #ffffff" default="#f5f5f5" showon="expand_footer_bg:1" >
+			</field>
+
+			<field name="footer_background" type="list" label="Footer pattern:" showon="expand_footer_bg:1" >
+
+			<option value="">None</option>
+			<option value="01.png">Stone</option>
+			<option value="02.png">Lines</option>
+			<option value="03.png">Rhombus</option>
+			<option value="04.png">Noise</option>
+			<option value="05.png">Сloth</option>
+			</field>
+
+			<field  name="footer_custom_bg_file" type="media" label="Custom background image:" showon="expand_footer_bg:1" >
+
+			</field>
+
+			<field name="footer_bg_size" type="radio" class="btn-group" label="Background-size:" default="auto" showon="expand_footer_bg:1" >
+
+			    <option value="auto">auto</option>
+			    <option value="cover">cover</option>
+			</field>
+
+			<field name="footer_bg_repeat" type="list" label="Background-repeat:" default="repeat" showon="expand_footer_bg:1" >
+
+			    <option value="no-repeat">no-repeat</option>
+			    <option value="repeat">repeat</option>
+			    <option value="repeat-x">repeat-x</option>
+			    <option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="footer_bg_attachment" type="radio" class="btn-group" label="Background-attachment:" default="scroll" showon="expand_footer_bg:1" >
+
+				<option value="scroll">scroll</option>
+				<option value="fixed">fixed</option>
+			</field>
+
+			<field type="spacer" showon="expand_footer_bg:1[OR]expand_footer_links:1" ></field>
+			
+
+			<field name="expand_footer_links" type="radio" class="btn-group" label="Links" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="footer_link_color" type="color" label="Footer links color:" description="Example: #000000" default="#92999E" showon="expand_footer_links:1" >
+
+			</field>
+
+			<field name="footer_link_hover_color" type="color" label="Footer links hover color:" description="Example: #ffffff" default="#12ABFF" showon="expand_footer_links:1" >
+
+			</field>
+
+			<field name="footer_underline" type="radio" class="btn-group" label="Footer links underline:" default="none" showon="expand_footer_links:1" >
+
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="footer_hover_underline" type="radio" class="btn-group" label="Footer links hover underline:" default="none" showon="expand_footer_links:1" >
+
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field>
+
+			<field type="spacer" showon="expand_footer_links:1[OR]expand_footer_font:1" ></field>
+			
+
+			<field name="expand_footer_font" type="radio" class="btn-group" label="Font" default="0">
+			    <option value="0">Inherit from body</option>
+			    <option value="1">Edit</option>
+			</field>
+
+			<field name="footer_font" type="list" label="Footer Font:" default="Poppins" showon="expand_footer_font:1" >
+
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="footer_links_font" type="list" label="Footer Links Font:" default="Poppins" showon="expand_footer_font:1" >
+
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field> 
+
+			<field name="footer_text_color" type="color" label="Footer text color:" description="Example: #666666" default="#666666" showon="expand_footer_font:1" >
+			</field>
+
+			<field type="spacer" showon="expand_footer_font:1[OR]expand_footer_h1:1" ></field>
+
+			
+			<field type="radio" name="expand_footer_h1" label="H1" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="footer_h1_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h1:1" description="Example: 36"></field>
+			<field name="footer_h1_color" type="color" label="Color:" default="#888888" showon="expand_footer_h1:1"></field>
+
+			<field type="spacer" showon="expand_footer_h1:1[OR]expand_footer_h2:1" ></field>
+
+			
+			<field type="radio" name="expand_footer_h2" label="H2" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="footer_h2_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h2:1" description="Example: 36"></field>
+			<field name="footer_h2_color" type="color" label="Color:" default="#888888" showon="expand_footer_h2:1"></field>
+
+			<field type="spacer" showon="expand_footer_h2:1[OR]expand_footer_h3:1" ></field>
+
+			
+			<field type="radio" name="expand_footer_h3" label="H3" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="footer_h3_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h3:1" description="Example: 36"></field>
+			<field name="footer_h3_color" type="color" label="Color:" default="#888888" showon="expand_footer_h3:1"></field>
+
+			<field type="spacer" showon="expand_footer_h3:1[OR]expand_footer_h4:1" ></field>
+
+			
+			<field type="radio" name="expand_footer_h4" label="H4" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="footer_h4_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h4:1" description="Example: 36"></field>
+			<field name="footer_h4_color" type="color" label="Color:" default="#888888" showon="expand_footer_h4:1"></field>
+
+
+			<field type="spacer" showon="expand_footer_h4:1[OR]expand_footer_h5:1" ></field>
+			
+			<field type="radio" name="expand_footer_h5" label="H5" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+
+			<field name="footer_h5_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h5:1" description="Example: 36"></field>
+
+			<field name="footer_h5_color" type="color" label="Color:" default="#474747" showon="expand_footer_h5:1"></field>
+
+			<field type="spacer" showon="expand_footer_h4:1[OR]expand_footer_h6:1" ></field>
+
+			
+			<field type="radio" name="expand_footer_h6" label="H6" default="0" class="btn-group">
+			<option value="0">Inherit from body</option>
+			<option value="1">Edit</option>
+			</field>
+			<field name="footer_h6_size" type="number" label="Font-size:" default="32" min="1" max="100" step="1" showon="expand_footer_h6:1" description="Example: 36"></field>
+			<field name="footer_h6_color" type="color" label="Color:" default="#888888" showon="expand_footer_h6:1"></field>
+
+
+		</fieldset>
+
+		<fieldset  name="logo" type="upload_func" label="Logo">
+			<field type="spacer"  />
+			<field name="logo_file" type="media" label="Select your logo:"></field>
+			<field name="logo_link" type="text" label="Logo link:"  description="Example: http://www.ordasoft.com" default="index.php"></field>
+			<field name="logo_width" type="number" label="Logo width:" description="Example: 90" default="163"></field>
+			<field name="logo_height" type="number" label="Logo height:" description="Example: 90" default="75"></field>
+		</fieldset>
+
+		<fieldset name="menu_link" type="upload_func" label="Menu Links">
+
+			<field type="spacer"  />
+
+			<field type="radio" name="expand_custom_meni_1" label="Custom Menu 1" default="0" class="btn-group">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+			<field name="custom_menu_1_class" type="text" label="Custom menu 1 class suffix:" description="Example: _custom_1" default="_custom_1" showon="expand_custom_meni_1:1"></field>
+
+			<field name="custom_menu_1_bg_color" type="color" label="Custom menu 1 color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_1:1"></field>
+
+			<field name="custom_menu_1_submenu_bg_color" type="color" label="Custom menu 1 submenu color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_1:1"></field>
+
+			<field name="custom_menu_1_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_1:1">
+			</field>
+
+			<field name="custom_menu_1_font" type="list" label="Custom menu 1 Font:" default="Poppins" showon="expand_custom_meni_1:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="custom_menu_1_color" 
+			type="color" 
+			label="Custom menu 1 links color:"
+			description="Example: #666666"
+			default="#666666"
+			 showon="expand_custom_meni_1:1">
+			</field>
+
+			<field 
+			name="custom_menu_1_hover_color" 
+			type="color" 
+			label="Custom menu 1 links hover color:"
+			description="Example: #ffffff"
+			default="#000000"
+			 showon="expand_custom_meni_1:1">
+			</field>
+
+			<field name="custom_menu_1_underline" type="radio" class="btn-group" label="Custom menu 1 links underline:" default="none" showon="expand_custom_meni_1:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="custom_menu_1_hover_underline" type="radio" class="btn-group" label="Custom menu 1 links hover underline:" default="none" showon="expand_custom_meni_1:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field type="spacer" showon="expand_custom_meni_1:1[OR]expand_custom_meni_2:1" ></field>
+
+			<field type="radio" name="expand_custom_meni_2" label="Custom Menu 2" default="1" class="btn-group">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+			<field name="custom_menu_2_class" type="text" label="Custom menu 2 class suffix:" description="Example: _custom_2" default="_custom_2" showon="expand_custom_meni_2:1"></field>
+
+			<field name="custom_menu_2_bg_color" type="color" label="Custom menu 2 color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_2:1"></field>
+
+			<field name="custom_menu_2_submenu_bg_color" type="color" label="Custom menu 2 submenu color:" description="Example: #FFFFFF" default="#474747" showon="expand_custom_meni_2:1"></field>
+
+			<field name="custom_menu_2_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_2:1">
+			</field>
+
+			<field name="custom_menu_2_font" type="list" label="Custom menu 2 Font:" default="Poppins" showon="expand_custom_meni_2:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field 
+			name="custom_menu_2_color" 
+			type="color" 
+			label="Custom menu 2 links color:"
+			description="Example: #666666"
+			default="#474747"
+			 showon="expand_custom_meni_2:1">
+			</field>
+
+			<field 
+			name="custom_menu_2_hover_color" 
+			type="color" 
+			label="Custom menu 2 links hover color:"
+			description="Example: #ffffff"
+			default="#a9acb3"
+			 showon="expand_custom_meni_2:1">
+			</field>
+
+			<field name="custom_menu_2_underline" type="radio" class="btn-group" label="Custom menu 2 links underline:" default="none" showon="expand_custom_meni_2:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="custom_menu_2_hover_underline" type="radio" class="btn-group" label="Custom menu 2 links hover underline:" default="none" showon="expand_custom_meni_2:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field type="spacer" showon="expand_custom_meni_2:1[OR]expand_custom_meni_3:1" ></field>
+
+			<field type="radio" name="expand_custom_meni_3" label="Custom Menu 3" default="1" class="btn-group">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+			<field name="custom_menu_3_class" type="text" label="Custom menu 3 class suffix:" description="Example: _custom_3" default="_custom_3" showon="expand_custom_meni_3:1"></field>
+
+			<field name="custom_menu_3_bg_color" type="color" label="Custom menu 3 color:" description="Example: #FFFFFF" default="#F5F5F5" showon="expand_custom_meni_3:1"></field>
+
+			<field name="custom_menu_3_submenu_bg_color" type="color" label="Custom menu 3 submenu color:" description="Example: #FFFFFF" default="#F5F5F5" showon="expand_custom_meni_3:1"></field>
+
+			<field name="custom_menu_3_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#F5F5F5" showon="expand_custom_meni_3:1">
+			</field>
+
+			<field name="custom_menu_3_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#F5F5F5" showon="expand_custom_meni_3:1">
+			</field>
+
+			<field name="custom_menu_3_font" type="list" label="Custom menu 3 Font:" default="Poppins" showon="expand_custom_meni_3:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field 
+			name="custom_menu_3_color" 
+			type="color" 
+			label="Custom menu 3 links color:"
+			description="Example: #666666"
+			default="#999999"
+			 showon="expand_custom_meni_3:1">
+			</field>
+
+			<field 
+			name="custom_menu_3_hover_color" 
+			type="color" 
+			label="Custom menu 3 links hover color:"
+			description="Example: #ffffff"
+			default="#999999"
+			 showon="expand_custom_meni_3:1">
+			</field>
+
+			<field name="custom_menu_3_underline" type="radio" class="btn-group" label="Custom menu 3 links underline:" default="none" showon="expand_custom_meni_3:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="custom_menu_3_hover_underline" type="radio" class="btn-group" label="Custom menu 3 links hover underline:" default="underline" showon="expand_custom_meni_3:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field type="spacer" showon="expand_custom_meni_3:1[OR]expand_custom_meni_4:1" ></field>
+
+			<field type="radio" name="expand_custom_meni_4" label="Custom Menu 4" default="0" class="btn-group">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+			<field name="custom_menu_4_class" type="text" label="Custom menu 4 class suffix:" description="Example: _custom_4" default="_custom_4" showon="expand_custom_meni_4:1"></field>
+
+			<field name="custom_menu_4_bg_color" type="color" label="Custom menu 1 color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_4:1"></field>
+
+			<field name="custom_menu_4_submenu_bg_color" type="color" label="Custom menu 4 submenu color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_4:1"></field>
+
+			<field name="custom_menu_4_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_4:1">
+			</field>
+
+			<field name="custom_menu_4_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_4:1">
+			</field>
+
+			<field name="custom_menu_4_font" type="list" label="Custom menu 4 Font:" default="Poppins" showon="expand_custom_meni_4:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field 
+			name="custom_menu_4_color" 
+			type="color" 
+			label="Custom menu 4 links color:"
+			description="Example: #666666"
+			default="#666666"
+			 showon="expand_custom_meni_4:1">
+			</field>
+
+			<field 
+			name="custom_menu_4_hover_color" 
+			type="color" 
+			label="Custom menu 4 links hover color:"
+			description="Example: #ffffff"
+			default="#000000"
+			 showon="expand_custom_meni_4:1">
+			</field>
+
+			<field name="custom_menu_4_underline" type="radio" class="btn-group" label="Custom menu 4 links underline:" default="none" showon="expand_custom_meni_4:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="custom_menu_4_hover_underline" type="radio" class="btn-group" label="Custom menu 4 links hover underline:" default="none" showon="expand_custom_meni_4:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field type="spacer" showon="expand_custom_meni_4:1[OR]expand_custom_meni_5:1" ></field>
+
+
+			<field type="radio" name="expand_custom_meni_5" label="Custom Menu 5" default="0" class="btn-group">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+			<field name="custom_menu_5_class" type="text" label="Custom menu 5 class suffix:" description="Example: _custom_5" default="_custom_5" showon="expand_custom_meni_5:1"></field>
+
+			<field name="custom_menu_5_bg_color" type="color" label="Custom menu 5 color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_5:1"></field>
+
+			<field name="custom_menu_5_submenu_bg_color" type="color" label="Custom menu 5 submenu color:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_5:1"></field>
+
+			<field name="custom_menu_5_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_5:1">
+			</field>
+
+			<field name="custom_menu_5_item_hover_bg_color" type="color" label="Item hover background:" description="Example: #FFFFFF" default="#FFFFFF" showon="expand_custom_meni_5:1">
+			</field>
+
+			<field name="custom_menu_5_font" type="list" label="Custom menu 5 Font:" default="Poppins" showon="expand_custom_meni_5:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field 
+			name="custom_menu_5_color" 
+			type="color" 
+			label="Custom menu 5 links color:"
+			description="Example: #666666"
+			default="#666666"
+			 showon="expand_custom_meni_5:1">
+			</field>
+
+			<field 
+			name="custom_menu_5_hover_color" 
+			type="color" 
+			label="Custom menu 5 links hover color:"
+			description="Example: #ffffff"
+			default="#000000"
+			 showon="expand_custom_meni_5:1">
+			</field>
+
+			<field name="custom_menu_5_underline" type="radio" class="btn-group" label="Custom menu 5 links underline:" default="none" showon="expand_custom_meni_5:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+			<field name="custom_menu_5_hover_underline" type="radio" class="btn-group" label="Custom menu 5 links hover underline:" default="none" showon="expand_custom_meni_5:1">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+
+		</fieldset>
+
+		<fieldset name="button" type="upload_func" label="Button style">
+
+			<field type="spacer"  />
+
+			<field type="radio" name="expand_button_1" label="First type buttons" default="1" class="btn-group" labelclass="button_section_header" description="Add first type buttons">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+
+			<field type="textarea" name="button_1_selector" label="Selectors" rows="6" cols="5" default="input.ba-btn-submit[type='submit'], .itp-subscribe .button, .logout-button .btn, .controls .btn, .login button, .registration button.btn-primary, .remind button.btn, .reset button.btn, .contact-form button.btn, .filter-search button.btn, #button_hidden_review input.btn, button.validate, .btn-default, input#newGroup, .content-category a.btn, .product span.addtocart-button input.addtocart-button, #com-form-login #com-form-login-remember input, form.form-validate .buttonBar-right button, .vm-orders-list .order-view input.button, .cart-view #checkoutForm .billto-shipto .floatleft a, .cart-view button, div.itemCommentsForm form input#submitCommentButton, #jform_profile_dob_img, #profile_dob_img, .footer-row a.pt-btn, input.highlight-button, .vm-orders-list .button, #form-login .button, .cart-view .button, .billto-shipto .floatleft.add_bill a, .billto-shipto .floatleft a, .control-buttons button.default, .control-buttons button.button, form#form-login input, .account_form_validate .buttonBar-right button, .manufacturer-details-view .spacer a, span.addtocart-button input.notify-button, a.btn.btn-primary[data-toggle='modal'], .registration button.btn-primary, .controls a.btn, .nav-pills &gt; li.active &gt; a, .nav-pills &gt; li.active &gt; a:hover, .nav-pills &gt; li.active &gt; a:focus, button:not(.navbar-toggle), input[type='button']:not(.quantity-controls), input[type='reset'], input[type='submit'], .navbar-toggle" showon="expand_button_1:1" >
+			</field>
+
+
+			<field type="radio" name="expand_button_1_background" label="Background" default="0" class="btn-group" showon="expand_button_1:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_1_bg_color" 
+			type="color" 
+			label="Background-color"
+			description="Example: #428bca"
+			default="#474747"
+			 showon="expand_button_1:1[AND]expand_button_1_background:1" >
+			</field>
+
+			<field type="spacer" showon="expand_button_1:1[AND]expand_button_1_background:1" ></field>
+
+			<field type="radio" name="expand_button_1_font_text" label="Font/Text" default="0" class="btn-group" showon="expand_button_1:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_1_text_color" 
+			type="Color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#ffffff"
+			showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+			</field>
+
+			<field name="button_1_font" type="list" label="Font-family:" default="Poppins" showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="button_1_font_size" type="number" label="Font-size:" description="Example: 14" default="15" min="1" max="60" step="1"  showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+			</field>
+
+			<field name="button_1_line_height" type="number" label="Line-height:" description="Example: 20" default="20" min="1" max="60" step="1"  showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+			</field>
+
+			<field name="button_1_font_weight" type="list" label="Font-weight:" default="400" showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="button_1_text_transform" type="radio" class="btn-group" label="Text-transform:" default="uppercase" showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+			    <option value="none">none</option>
+			    <option value="uppercase">uppercase</option>
+			</field> 
+
+
+			<field name="expand_button_1_text_shadow" type="radio" class="btn-group" label="Text-shadow" default="0" showon="expand_button_1:1[AND]expand_button_1_font_text:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+			<field 
+			name="button_1_text_shadow_color" 
+			type="color" 
+			label="Text-shadow color"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_1:1[AND]expand_button_1_font_text:1[AND]expand_button_1_text_shadow:1" >
+			</field>
+
+			<field name="button_1_text_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_font_text:1[AND]expand_button_1_text_shadow:1" >
+			</field>
+
+			<field name="button_1_text_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_font_text:1[AND]expand_button_1_text_shadow:1" >
+			</field>
+
+			<field name="button_1_text_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_font_text:1[AND]expand_button_1_text_shadow:1" >
+			</field>
+
+			<field type="spacer" showon="expand_button_1:1[AND]expand_button_1_font_text:1" ></field>
+
+			<field type="radio" name="expand_button_1_box" label="Box" default="0" class="btn-group" showon="expand_button_1:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+
+			<field name="button_1_padding_top" type="number" label="Padding-top:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1" >
+			</field>
+
+			<field name="button_1_padding_right" type="number" label="Padding-right:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1" >
+			</field>
+
+			<field name="button_1_padding_bottom" type="number" label="Padding-bottom:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1" >
+			</field>
+
+			<field name="button_1_padding_left" type="number" label="Padding-left:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1" >
+			</field>
+
+
+			<field name="expand_button_1_box_shadow" type="radio" class="btn-group" label="Box-shadow" default="0" showon="expand_button_1:1[AND]expand_button_1_box:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+			<field 
+			name="button_1_box_shadow_color" 
+			type="color" 
+			label="Box-shadow color"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			</field>
+
+			<field name="button_1_box_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			</field>
+
+			<field name="button_1_box_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			</field>
+
+			<field name="button_1_box_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			</field>
+
+			<field name="button_1_box_shadow_spread" type="number" label="Spread:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			</field>
+
+			<field name="button_1_box_shadow_type" type="radio" class="btn-group" label="Type:" default="inset" showon="expand_button_1:1[AND]expand_button_1_box:1[AND]expand_button_1_box_shadow:1" >
+			    <option value="inset">inset</option>
+			    <option value="outset">outset</option>
+			</field> 
+
+			<field type="spacer" showon="expand_button_1:1[AND]expand_button_1_box:1" ></field>
+			
+
+			<field type="radio" name="expand_button_1_border" label="Border" default="1" class="btn-group" showon="expand_button_1:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="button_1_border_radius" type="number" label="Border-radius:" description="Example: 0" default="0" min="0" max="60" step="1"  showon="expand_button_1:1[AND]expand_button_1_border:1" >
+			</field>
+
+			<field name="button_1_border_width" type="number" label="Border-width:" description="Example: 0" default="1" min="0" max="15" step="1"  showon="expand_button_1:1[AND]expand_button_1_border:1" >
+			</field>
+
+			<field 
+			name="button_1_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #428bca"
+			default="#474747"
+			 showon="expand_button_1:1[AND]expand_button_1_border:1" >
+			</field>
+
+			<field name="button_1_border_style" type="list" label="Border-style:" default="solid" showon="expand_button_1:1[AND]expand_button_1_border:1" >
+				<option value="solid">solid</option>
+				<option value="dotted">dotted</option>
+			</field>
+
+			<field type="spacer" showon="expand_button_1:1[AND]expand_button_1_border:1" ></field>
+
+			<field type="radio" name="expand_button_1_hover_style" label="Hover" default="0" class="btn-group" showon="expand_button_1:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_1_hover_bg_color" 
+			type="color" 
+			label="Background"
+			description="Example: #2069a8"
+			default="#ffffff"
+			 showon="expand_button_1:1[AND]expand_button_1_hover_style:1" >
+			</field>
+
+			<field 
+			name="button_1_hover_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #428bca"
+			default="#474747"
+			 showon="expand_button_1:1[AND]expand_button_1_hover_style:1" >
+			</field>
+
+			<field 
+			name="button_1_hover_text_color" 
+			type="color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#474747"
+			 showon="expand_button_1:1[AND]expand_button_1_hover_style:1" >
+			</field>
+
+
+			<field type="spacer" showon="expand_button_1:1" >
+			</field>
+
+			<field name="expand_button_2" type="radio" class="btn-group" label="Second type buttons" default="1" labelclass="button_section_header" description="Second type buttons">
+			    <option value="1">Add</option>
+			    <option value="0">Remove</option>
+			</field> 
+
+
+			<field type="textarea" name="button_2_selector" label="Selectors" rows="6" cols="5" showon="expand_button_2:1" default=".product .vm-details-button a, .show_cart a" >
+			</field>
+
+			<field type="radio" name="expand_button_2_background" label="Background" default="0" class="btn-group" showon="expand_button_2:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_2_bg_color" 
+			type="color" 
+			label="Background-color"
+			description="Example: #428bca"
+			default="#c1c1c1"
+			showon="expand_button_2:1[AND]expand_button_2_background:1"  
+			>
+			</field>
+
+			<field type="spacer" showon="expand_button_2:1[AND]expand_button_2_background:1" ></field>
+
+			
+			<field type="radio" name="expand_button_2_font_text" label="Font/Text" default="0" class="btn-group" showon="expand_button_2:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_2_text_color" 
+			type="Color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#474747"
+			 showon="expand_button_2:1[AND]expand_button_2_font_text:1"  
+
+			>
+			</field>
+
+			<field name="button_2_font" type="list" label="Font-family:" default="Poppins" showon="expand_button_2:1[AND]expand_button_2_font_text:1"  
+				>
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="button_2_font_size" type="number" label="Font-size:" description="Example: 14" default="14" min="1" max="100" step="1" showon="expand_button_2:1[AND]expand_button_2_font_text:1"  >
+			</field>
+
+			<field name="button_2_line_height" type="number" label="Line-height:" description="Example: 20" default="20" min="1" max="60" step="1" showon="expand_button_2:1[AND]expand_button_2_font_text:1"  >
+			</field>
+
+			<field name="button_2_font_weight" type="list" label="Font-weight:" default="400"  showon="expand_button_2:1[AND]expand_button_2_font_text:1"  >
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="button_2_text_transform" type="radio" class="btn-group" label="Text-transform:" default="none"  showon="expand_button_2:1[AND]expand_button_2_font_text:1" >
+			    <option value="none">none</option>
+			    <option value="uppercase">uppercase</option>
+			</field> 
+
+			<field name="expand_button_2_text_shadow" type="radio" class="btn-group" label="Text-shadow" default="0" showon="expand_button_2:1[AND]expand_button_2_font_text:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+			<field 
+			name="button_2_text_shadow_color" 
+			type="color" 
+			label="Text-shadow"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_2:1[AND]expand_button_2_font_text:1[AND]expand_button_2_text_shadow:1"  >
+			</field>
+
+			<field name="button_2_text_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_font_text:1[AND]expand_button_2_text_shadow:1"  >
+			</field>
+
+			<field name="button_2_text_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_font_text:1[AND]expand_button_2_text_shadow:1"  >
+			</field>
+
+			<field name="button_2_text_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_font_text:1[AND]expand_button_2_text_shadow:1"  >
+			</field>
+
+			<field type="spacer" showon="expand_button_2:1[AND]expand_button_2_font_text:1" ></field>
+
+			
+			<field type="radio" name="expand_button_2_box" label="Box" default="0" class="btn-group" showon="expand_button_2:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="button_2_padding_top" type="number" label="Padding-top:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1"  >
+			</field>
+
+			<field name="button_2_padding_right" type="number" label="Padding-right:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1"  >
+			</field>
+
+			<field name="button_2_padding_bottom" type="number" label="Padding-bottom:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1"  >
+			</field>
+
+			<field name="button_2_padding_left" type="number" label="Padding-left:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1"  >
+			</field>
+
+			<field name="expand_button_2_box_shadow" type="radio" class="btn-group" label="Box-shadow" default="0" showon="expand_button_2:1[AND]expand_button_2_box:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+			<field 
+			name="button_2_box_shadow_color" 
+			type="color" 
+			label="Box-shadow"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			</field>
+
+			<field name="button_2_box_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			</field>
+
+			<field name="button_2_box_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			</field>
+
+			<field name="button_2_box_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			</field>
+
+			<field name="button_2_box_shadow_spread" type="number" label="Spread:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			</field>
+
+			<field name="button_2_box_shadow_type" type="radio" class="btn-group" label="Type:" default="inset" showon="expand_button_2:1[AND]expand_button_2_box:1[AND]expand_button_2_box_shadow:1"  >
+			    <option value="inset">inset</option>
+			    <option value="outset">outset</option>
+			</field> 
+
+			<field type="spacer" showon="expand_button_2:1[AND]expand_button_2_box:1" ></field>
+			
+			<field type="radio" name="expand_button_2_border" label="Border" default="1" class="btn-group" showon="expand_button_2:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="button_2_border_radius" type="number" label="Border-radius:" description="Example: 0" default="0" min="0" max="60" step="1"  showon="expand_button_2:1[AND]expand_button_2_border:1"  >
+			</field>
+
+			<field name="button_2_border_width" type="number" label="Border-width:" description="Example: 0" default="1" min="0" max="15" step="1"  showon="expand_button_2:1[AND]expand_button_2_border:1"  >
+			</field>
+
+			<field 
+			name="button_2_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #ffffff"
+			default="#c1c1c1"
+			 showon="expand_button_2:1[AND]expand_button_2_border:1"  >
+			</field>
+
+			<field name="button_2_border_style" type="list" label="Border-style:" default="solid" showon="expand_button_2:1[AND]expand_button_2_border:1"  >
+				<option value="solid">solid</option>
+				<option value="dotted">dotted</option>
+			</field>
+
+			<field type="spacer" showon="expand_button_2:1[AND]expand_button_2_border:1" ></field>
+			
+			<field type="radio" name="expand_button_2_hover_style" label="Hover" default="0" class="btn-group" showon="expand_button_2:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_2_hover_bg_color" 
+			type="color" 
+			label="Background"
+			description="Example: #2069a8"
+			default="#474747"
+			 showon="expand_button_2:1[AND]expand_button_2_hover_style:1"  >
+			</field>
+
+			<field 
+			name="button_2_hover_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #FFFFFF"
+			default="#c1c1c1"
+			 showon="expand_button_2:1[AND]expand_button_2_hover_style:1" >
+			</field>
+
+			<field 
+			name="button_2_hover_text_color" 
+			type="color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#c1c1c1"
+			 showon="expand_button_2:1[AND]expand_button_2_hover_style:1"  >
+			</field>
+
+			<field type="spacer"   showon="expand_button_2:1"  >
+			</field>
+
+			<field type="radio" name="expand_button_3" label="Third type buttons" default="1" class="btn-group" labelclass="button_section_header" description="Add Third type buttons">
+				<option value="1">Add</option>
+				<option value="0">Remove</option>
+			</field>
+
+
+			<field type="textarea" name="button_3_selector" label="Selectors" rows="6" cols="5"  showon="expand_button_3:1">
+			</field>
+
+			<field type="radio" name="expand_button_3_background" label="Background" default="0" class="btn-group" showon="expand_button_3:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_3_bg_color" 
+			type="color" 
+			label="Background-color"
+			description="Example: #428bca"
+			default="#428bca"
+			 showon="expand_button_3:1[AND]expand_button_3_background:1">
+			</field>
+
+			<field type="spacer" showon="expand_button_3:1[AND]expand_button_3_font_text:1"  >
+			</field>
+
+			<field type="radio" name="expand_button_3_font_text" label="Font/Text" default="0" class="btn-group" showon="expand_button_3:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field 
+			name="button_3_text_color" 
+			type="Color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#ffffff"
+			 showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+			</field>
+
+			<field name="button_3_font" type="list" label="Font-family:" default="Poppins" showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+				<option value="Abel">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis">Dosis</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Lato">Lato</option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lora">Lora</option>
+				<option value="Open Sans">Open Sans</option>
+				<option value="Open Sans Condensed">Open Sans Condensed</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen">Oxygen</option>
+				<option value="Poppins">Poppins</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="Prosto One">Prosto One</option>
+				<option value="Quicksand">Quicksand</option>
+				<option value="Raleway">Raleway</option>
+				<option value="Roboto Condensed">Roboto Condensed</option>
+				<option value="Roboto">Roboto</option>
+				<option value="Roboto Slab">Roboto Slab</option>
+				<option value="Share">Share</option>
+				<option value="Source Sans Pro">Source Sans Pro</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ubuntu Condensed">Ubuntu Condensed</option>
+			</field>
+
+			<field name="button_3_font_size" type="number" label="Font-size:" description="Example: 14" default="14" min="1" max="100" step="1"  showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+			</field>
+
+			<field name="button_3_line_height" type="number" label="Line-height:" description="Example: 20" default="20" min="1" max="60" step="1"  showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+			</field>
+
+			<field name="button_3_font_weight" type="list" label="Font-weight:" default="400" showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+				<option value="100">Thin</option>
+				<option value="200">Extra Light</option>
+				<option value="300">Light</option>
+				<option value="400">Normal</option>
+				<option value="500">Medium</option>
+				<option value="600">Semi Bold</option>
+				<option value="700">Bold</option>
+				<option value="800">Extra Bold</option>
+				<option value="900">Heavy</option>
+			</field>
+
+			<field name="button_3_text_transform" type="radio" class="btn-group" label="Text-transform:" default="none" showon="expand_button_1:1[AND]expand_button_3_font_text:1">
+			    <option value="none">none</option>
+			    <option value="uppercase">uppercase</option>
+			</field> 
+
+			<field name="expand_button_3_text_shadow" type="radio" class="btn-group" label="Text-shadow" default="0" showon="expand_button_3:1[AND]expand_button_3_font_text:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+			<field 
+			name="button_3_text_shadow_color" 
+			type="color" 
+			label="Text-shadow"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_1:1[AND]expand_button_3_font_text:1[AND]expand_button_3_text_shadow:1">
+			</field>
+
+			<field name="button_3_text_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_3_font_text:1[AND]expand_button_3_text_shadow:1">
+			</field>
+
+			<field name="button_3_text_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_3_font_text:1[AND]expand_button_3_text_shadow:1">
+			</field>
+
+			<field name="button_3_text_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_1:1[AND]expand_button_3_font_text:1[AND]expand_button_3_text_shadow:1">
+			</field>
+
+			<field type="spacer" showon="expand_button_3:1[AND]expand_button_3_font_text:1"  >
+			</field>
+			
+
+			<field type="radio" name="expand_button_3_box" label="Box" default="0" class="btn-group" showon="expand_button_3:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="button_3_padding_top" type="number" label="Padding-top:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1">
+			</field>
+
+			<field name="button_3_padding_right" type="number" label="Padding-right:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1">
+			</field>
+
+			<field name="button_3_padding_bottom" type="number" label="Padding-bottom:" description="Example: 6" default="6" min="0" max="40" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1">
+			</field>
+
+			<field name="button_3_padding_left" type="number" label="Padding-left:" description="Example: 12" default="12" min="0" max="40" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1">
+			</field>
+
+			<field name="expand_button_3_box_shadow" type="radio" class="btn-group" label="Box-shadow" default="0" showon="expand_button_3:1[AND]expand_button_3_box:1" >
+			    <option value="0">Disable</option>
+			    <option value="1">Enable</option>
+			</field> 
+
+
+			<field 
+			name="button_3_box_shadow_color" 
+			type="color" 
+			label="Box-shadow"
+			description="Example: #000000"
+			default="#000000"
+			 showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			</field>
+
+			<field name="button_3_box_shadow_x" type="number" label="Offset-x:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			</field>
+
+			<field name="button_3_box_shadow_y" type="number" label="Offset-y:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			</field>
+
+			<field name="button_3_box_shadow_blur" type="number" label="Blur:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			</field>
+
+			<field name="button_3_box_shadow_spread" type="number" label="Spread:" description="Example: 0" default="0" min="0" max="30" step="1"  showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			</field>
+
+			<field name="button_3_box_shadow_type" type="radio" class="btn-group" label="Type:" default="inset" showon="expand_button_3:1[AND]expand_button_3_box:1[AND]expand_button_3_box_shadow:1">
+			    <option value="inset">inset</option>
+			    <option value="outset">outset</option>
+			</field> 
+
+			<field type="spacer" showon="expand_button_3:1[AND]expand_button_3_border:1"  >
+			</field>
+			
+			<field type="radio" name="expand_button_3_border" label="Border" default="0" class="btn-group" showon="expand_button_3:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+			<field name="button_3_border_radius" type="number" label="Border-radius:" description="Example: 0" default="0" min="0" max="60" step="1"  showon="expand_button_3:1[AND]expand_button_3_border:1">
+			</field>
+
+			<field name="button_3_border_width" type="number" label="Border-width:" description="Example: 0" default="0" min="0" max="15" step="1"  showon="expand_button_3:1[AND]expand_button_3_border:1">
+			</field>
+
+			<field 
+			name="button_3_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #ffffff"
+			default="#ffffff"
+			 showon="expand_button_3:1[AND]expand_button_3_border:1">
+			</field>
+
+			<field name="button_3_border_style" type="list" label="Border-style:" default="solid" showon="expand_button_3:1[AND]expand_button_3_border:1">
+				<option value="solid">solid</option>
+				<option value="dotted">dotted</option>
+			</field>
+
+
+			<field type="spacer" showon="expand_button_3:1[AND]expand_button_3_hover_style:1"  >
+			</field>
+
+			<field type="radio" name="expand_button_3_hover_style" label="Hover" default="0" class="btn-group" showon="expand_button_3:1" >
+				<option value="0">Hide</option>
+			    <option value="1">Show</option>
+			</field>
+
+
+			<field 
+			name="button_3_hover_bg_color" 
+			type="color" 
+			label="Background"
+			description="Example: #2069a8"
+			default="#2069a8"
+			 showon="expand_button_3:1[AND]expand_button_3_hover_style:1">
+			</field>
+
+			<field 
+			name="button_3_hover_border_color" 
+			type="color" 
+			label="Border-color"
+			description="Example: #FFFFFF"
+			default="#FFFFFF"
+			 showon="expand_button_3:1[AND]expand_button_3_hover_style:1" >
+			</field>
+
+			<field 
+			name="button_3_hover_text_color" 
+			type="color" 
+			label="Font-color"
+			description="Example: #ffffff"
+			default="#ffffff"
+			 showon="expand_button_3:1[AND]expand_button_3_hover_style:1">
+			</field>
+
+			<field type="spacer" showon="expand_button_3:1"  >
+			</field>
+
+
+		</fieldset>
+
+		<fieldset  name="prelouder" type="upload_func" label="Prelouder">
+
+			<field type="spacer"  />
+
+			<field name="expand_prelouder" type="radio" class="btn-group" label="Prelouder" default="1">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			</field>
+
+			<field name="prelouder" type="list" label="Type" default="chasing-dots" showon="expand_prelouder:1">
+				<option value="rotating-plane">rotating-plane</option>
+				<option value="double-bounce">double-bounce</option>
+				<option value="rectangle-bounce">rectangle-bounce</option>
+				<option value="wandering-cubes">wandering-cubes</option>
+				<option value="pulse">pulse</option>
+				<option value="chasing-dots">chasing-dots </option>
+				<option value="three-bounce">three-bounce</option>
+				<option value="sk-circle">sk-circle</option>
+				<option value="sk-cube-grid">sk-cube-grid</option>
+				<option value="sk-fading-circle">sk-fading-circle</option>
+			</field> 
+
+			<field name="prelouder_color" type="color" label="Prelouder color:" description="Example: #000000" default="#c1c1c1" showon="expand_prelouder:1">
+			</field>
+
+		</fieldset>
+
+		<fieldset name="social_icons" label="Social links">
+
+			<field type="spacer"  />
+
+			<field name="soc_icons_size" type="number" label="Font-size:" description="Example: 18" default="18" min="1" max="100" step="1" >
+			</field>
+			<field name="twitter" type="text" label="Twitter" description="Insert URL here." default=""></field>
+			<field name="facebook" type="text" label="Facebook" description="Insert URL here." default=""></field>
+			<field name="flickr" type="text" label="Flickr" description="Insert URL here." default=""></field>
+			<field name="linkedin" type="text" label="Linked in" description="Insert URL here." default=""></field>
+			<field name="youtube" type="text" label="YouTube" description="Insert URL here." default=""></field>
+			<field name="pinterest" type="text" label="Pinterest" description="Insert URL here." default=""></field>
+			<field name="google" type="text" label="Google+" description="Insert URL here." default=""></field>
+			<field name="dribbble" type="text" label="Dribbble" description="Insert URL here." default=""></field>
+			<field name="vimeo" type="text" label="Vimeo" description="Insert URL here." default=""></field>
+			<field name="instagram" type="text" label="Instagram" description="Insert URL here." default=""></field>
+			<field name="vk" type="text" label="Vk" description="Insert URL here." default=""></field>
+		</fieldset>
+
+		<fieldset name="copyright" label="Copyright">
+			<field type="spacer"  />
+			<field name="copyrights" label ="Copyright:" type="editor" width="300" filter="safehtml" />
+		</fieldset>
+
+		<fieldset name="tracking_code" label="Tracking Google Code">
+			<field type="spacer"  />
+			<field name="tracking_code" type="textarea" label="Tracking Google Code:" description="Enter your Tracking Google Code in JavaScript tags"></field>
+		</fieldset>
+
+	</fields>
+
+</config>
+
+</extension>
