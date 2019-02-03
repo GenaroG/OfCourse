@@ -875,3 +875,4 @@
 2019-02-02 22:43:03 ERROR vmError: Couldnt create thumb, file not found /var/www/html/enlinea/images/stories/virtuemart/category/portfolio.png
 2019-02-02 22:43:03 ERROR vmError: Couldnt create thumb, file not found /var/www/html/enlinea/images/stories/virtuemart/category/business.png
 2019-02-02 22:43:03 ERROR vmError: Couldnt create thumb, file not found /var/www/html/enlinea/images/stories/virtuemart/category/portfolio9.jpeg
+2019-02-02 22:47:53 ERROR vmError: File not found /var/www/html/enlinea/images/stories/virtuemart/product/800x800-min.png
