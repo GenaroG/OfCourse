@@ -1074,3 +1074,36 @@
 #8  Joomla\CMS\MVC\View\HtmlView-&gt;loadTemplate() called at [/var/www/html/enlinea/libraries/src/MVC/View/HtmlView.php:230]
 #9  Joomla\CMS\MVC\View\HtmlView-&gt;display() called at [/var/www/html/enlinea/administrator/components/com_modules/views/module/view.html.php:46]
 &lt;/pre&gt;
+2019-02-03 19:35:54 NO LANGUAGE LOADED  COM_VIRTUEMART &lt;pre&gt;#0  vmTrace() called at [/var/www/html/enlinea/administrator/components/com_virtuemart/helpers/vmlanguage.php:268]
+#1  vmLanguage::loadJLang() called at [/var/www/html/enlinea/administrator/components/com_virtuemart/fields/vmloadlang.php:39]
+#2  JFormFieldVmLoadLang-&gt;getInput() called at [/var/www/html/enlinea/libraries/src/Form/FormField.php:975]
+#3  Joomla\CMS\Form\FormField-&gt;renderField() called at [/var/www/html/enlinea/layouts/joomla/edit/fieldset.php:47]
+#4  include(/var/www/html/enlinea/layouts/joomla/edit/fieldset.php) called at [/var/www/html/enlinea/libraries/src/Layout/FileLayout.php:125]
+#5  Joomla\CMS\Layout\FileLayout-&gt;render() called at [/var/www/html/enlinea/libraries/src/Layout/LayoutHelper.php:73]
+#6  Joomla\CMS\Layout\LayoutHelper::render() called at [/var/www/html/enlinea/administrator/components/com_modules/views/module/tmpl/edit.php:231]
+#7  include(/var/www/html/enlinea/administrator/components/com_modules/views/module/tmpl/edit.php) called at [/var/www/html/enlinea/libraries/src/MVC/View/HtmlView.php:695]
+#8  Joomla\CMS\MVC\View\HtmlView-&gt;loadTemplate() called at [/var/www/html/enlinea/libraries/src/MVC/View/HtmlView.php:230]
+#9  Joomla\CMS\MVC\View\HtmlView-&gt;display() called at [/var/www/html/enlinea/administrator/components/com_modules/views/module/view.html.php:46]
+&lt;/pre&gt;
+2019-02-03 19:35:54 NO LANGUAGE LOADED  COM_VIRTUEMART_CONFIG &lt;pre&gt;#0  vmTrace() called at [/var/www/html/enlinea/administrator/components/com_virtuemart/helpers/vmlanguage.php:268]
+#1  vmLanguage::loadJLang() called at [/var/www/html/enlinea/administrator/components/com_virtuemart/fields/vmloadlang.php:39]
+#2  JFormFieldVmLoadLang-&gt;getInput() called at [/var/www/html/enlinea/libraries/src/Form/FormField.php:975]
+#3  Joomla\CMS\Form\FormField-&gt;renderField() called at [/var/www/html/enlinea/layouts/joomla/edit/fieldset.php:47]
+#4  include(/var/www/html/enlinea/layouts/joomla/edit/fieldset.php) called at [/var/www/html/enlinea/libraries/src/Layout/FileLayout.php:125]
+#5  Joomla\CMS\Layout\FileLayout-&gt;render() called at [/var/www/html/enlinea/libraries/src/Layout/LayoutHelper.php:73]
+#6  Joomla\CMS\Layout\LayoutHelper::render() called at [/var/www/html/enlinea/administrator/components/com_modules/views/module/tmpl/edit.php:231]
+#7  include(/var/www/html/enlinea/administrator/components/com_modules/views/module/tmpl/edit.php) called at [/var/www/html/enlinea/libraries/src/MVC/View/HtmlView.php:695]
+#8  Joomla\CMS\MVC\View\HtmlView-&gt;loadTemplate() called at [/var/www/html/enlinea/libraries/src/MVC/View/HtmlView.php:230]
+#9  Joomla\CMS\MVC\View\HtmlView-&gt;display() called at [/var/www/html/enlinea/administrator/components/com_modules/views/module/view.html.php:46]
+&lt;/pre&gt;
+2019-02-03 20:45:06 ERROR vmError: Failed to parse the Currency Converter XML document.
+2019-02-03 20:45:06 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2019-02-03 20:59:27 ERROR vmError: Save failed with the following error: Username in use.
+2019-02-03 21:00:10 ERROR vmError: Save failed with the following error: This email address is already registered.
